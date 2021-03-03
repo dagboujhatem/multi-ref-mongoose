@@ -36,7 +36,7 @@ router.post('/save',  async(req,res) => {
 
 //
 router.get('/get', async(req,res) => {
-    const comments = await Comment.find().populate('sur').sort({ body: 1 });
+  createdAt   createdAt     const comments = await Comment.find().populate('sur').sort({ createdAt: -1 });
      // return 
      res.status(200).json(comments);
 });
